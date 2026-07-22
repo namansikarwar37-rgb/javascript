@@ -1,0 +1,17 @@
+<script>
+    function greet(name, callback) {
+        console.log("Hello " + name);
+        callback();
+    }
+    function sayBye(){
+        console.log("Good Bye");
+    }
+
+    greet("Vikas, sayBye");
+</script>
+
+<!-- jb aap ek function ko dusre function ke andr as a parameter pass krte ho toh use hum callback function kehte hai
+
+greet() ek main function hai
+sayBye() ek callback function hai
+sayBye() ko greet() le andr argument ke form mein pass kiya gya hai. jb greet() apna kam (Hello Vikas) print kr leta hai tb wo callback() ko call krta hai, jiski wajh se sayBye() execute hota hai. -->

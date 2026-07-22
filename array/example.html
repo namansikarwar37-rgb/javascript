@@ -1,0 +1,24 @@
+<script>
+    const students = [
+        { name : "Amit", marks: 85 },
+        { name : "Riya", marks: 42 },
+        { name : "Vikas", marks: 74 },
+        { name : "Anu", marks: 30 },        
+    ];
+    // forEach: har student ka naam print kro
+    students.forEach((student) => {
+        console.log(student.name);
+    });
+
+    //map: Sabka naam capital mein naya array bnao
+    const namesUpper = students.map((student) => {
+        return student.name.toUpperCase();
+    });
+
+    //filter: Sirf pass hue student chhano (marks>40)
+    const passed = students.filter((student) => {
+        return student.marks > 40;
+    });
+
+    console.log(passed);
+</script>

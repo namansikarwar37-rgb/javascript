@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" onchange="checkvalue(value)">
+        <option>College</option>
+        <option value="red">RJIT</option>
+        <option value="blue">ITM</option>
+        <option value="others">Other</option>text
+    </select>
+    <input type="text" name="" id="color" style="display:none"/>
+
+    <button>Submit</button>
+
+    <script>
+        function  checkvalue(val) {
+            if (val === "others")
+            document.getElementById("color").style.display = "block";
+        else document.getElementById("color").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

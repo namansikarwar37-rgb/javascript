@@ -1,0 +1,30 @@
+<script>
+  // Ek E-commerce checkout function
+  function processPayment(user, cart) {
+    // Guard Clause 1: Agar user logged in nahi hai
+    if (!user.isLoggedIn) {
+      return "Error: Kripya pehle login karein.";
+    }
+
+    // Guard Clause 2: Agar cart khali hai
+    if (cart.length === 0) {
+      return "Error: Aapka cart khali hai.";
+    }
+
+    // Guard Clause 3: Agar balance kam hai
+    if (user.balance < cart.totalAmount) {
+      return "Error: Insufficient balance.";
+    }
+
+    // Agar saari conditions pass ho gayin, toh main logic chalega
+    user.balance -= cart.totalAmount;
+    return "Success: Payment safal rahi! Naya balance: " + user.balance;
+  }
+
+  // Testing the advanced function
+  const user = { isLoggedIn: true, balance: 500 };
+  const cart = { length: 2, totalAmount: 450 };
+
+  console.log(processPayment(user, cart));
+  // Output: Success: Payment safal rahi! Naya balance: 50
+</script>

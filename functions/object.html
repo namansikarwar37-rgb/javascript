@@ -1,0 +1,13 @@
+<script>
+    const person = {
+        name: "Vikas",
+        age: 30,
+        city: "Indore",
+        greet: function (){
+            console.log("Hello! My name is " + this.name);
+        },
+    };
+    console.log(person.name);// Vikas
+    person.greet();// Hello! my name is Vikas
+    document.write(JSON.stringify(person))
+</script>
