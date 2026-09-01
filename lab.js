@@ -46,42 +46,44 @@
 
 // console.log(typeof(name));
 
-let name = "naman";
-let age = 19;
-let isStudent = true;
+// let name = "naman";
+// let age = 19;
+// let isStudent = true;
 
-console.log(typeof(name));
-console.log(typeof(age));
-console.log(typeof(isStudent));
+// console.log(typeof(name));
+// console.log(typeof(age));
+// console.log(typeof(isStudent));
 
-let product = {
-  name : "Laptop",
-  price : 50000,
-  isStock : true
-}
+// let product = {
+//   name : "Laptop",
+//   price : 50000,
+//   isStock : true
+// }
 
-console.log(product)
+// console.log(product)
 
-let colours = ["red", "blue", "yellow", "green"];
+// let colours = ["red", "blue", "yellow", "green"];
 
-console.log(colours[0]);
-console.log(colours[3]);
+// console.log(colours[0]);
+// console.log(colours[3]);
 
-let a = null;
-let b;
+// let a = null;
+// let b;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
-let str = '150';
+// let str = '150';
 
-let num1 = Number(str);
-let num2 = Number(parseInt);
-let num3 = +str;
+// let num1 = Number(str);
+// let num2 = Number(parseInt);
+// let num3 = +str;
 
-console.log(num1);
-console.log(num2);
-console.log(num3);
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+
+//Operators - Arithmatic operators
 
 
 
